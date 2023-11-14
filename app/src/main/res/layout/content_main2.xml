@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
     <Button
-        android:id="@+id/botao1"
+        android:id="@+id/botao2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -17,6 +16,19 @@
         android:textColor="#FF6200EE"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botaovoltar1"
+        android:padding="15dp"
+        android:background="@drawable/background_button"
+        android:text="Voltar"
+        android:textSize="10dp"
+        android:textColor="#FF6200EE"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
