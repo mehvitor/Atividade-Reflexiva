@@ -5,6 +5,28 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="Configurações"
+        app:showAsAction="never"
+        />
+    <item
+       android:id="@+id/lupa"
+        android:icon="@drawable/img"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:title="Digite seu nome"
+        android:id="@+id/nome"
+        />
+
+    <item
+        android:title="Digite seu endereço"
+        android:id="@+id/endereço"
+        />
+
+    <item
+        android:title="Digite seu Cpf"
+        android:id="@+id/cpf"
+        />
 </menu>
