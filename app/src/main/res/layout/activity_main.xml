@@ -16,7 +16,7 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
-            android:background="#530082"
+            android:background="#f1c40f"
             app:title="Página 1"
             app:titleTextColor="@color/white"
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/img_4" />
 
 
 

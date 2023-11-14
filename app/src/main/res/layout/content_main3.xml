@@ -15,7 +15,7 @@
         android:background="@drawable/background_button"
         android:text="Voltar"
         android:textSize="10dp"
-        android:textColor="#FF6200EE"
+        android:textColor="#757575"
         app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         />
