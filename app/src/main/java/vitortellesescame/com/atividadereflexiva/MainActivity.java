@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         Button btn1 = findViewById(R.id.botao1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Toast.makeText(this, "Você acessou as configurações", Toast.LENGTH_SHORT).show();
         }
 
         if (id == R.id.nome) {
@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Você inseriu seu CPF", Toast.LENGTH_SHORT).show();
         }
 
+        if (id == R.id.conta) {
+            Toast.makeText(this, "Minha Conta", Toast.LENGTH_SHORT).show();
+        }
 
         return super.onOptionsItemSelected(item);
     }

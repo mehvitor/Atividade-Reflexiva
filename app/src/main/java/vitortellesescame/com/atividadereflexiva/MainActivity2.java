@@ -1,6 +1,7 @@
 package vitortellesescame.com.atividadereflexiva;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -47,6 +48,16 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MainActivity3.class));
+            }
+        });
+
+        Button btncentral = findViewById(R.id.botaocentral);
+
+        btncentral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://fazumpedido.com/"));
+                startActivity(browserIntent);
             }
         });
 
