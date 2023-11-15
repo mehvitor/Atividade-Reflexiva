@@ -27,8 +27,6 @@ public class MainActivity3 extends AppCompatActivity {
     Adapter adapter;
     ArrayList<String> items;
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMain3Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +34,12 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         items = new ArrayList<>();
-        items.add("Primeiro item do Cardview");
-        items.add("Segundo item do Cardview");
-        items.add("Terceiro item do Cardview");
-        items.add("Quarto item do Cardview");
+        items.add("KIT DE FESTA 1");
+        items.add("KIT DE FESTA 2");
+        items.add("KIT DE FESTA 3");
+        items.add("KIT DE FESTA 4");
+        items.add("KIT DE FESTA 5");
+        items.add("KIT DE FESTA 6");
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -47,27 +47,6 @@ public class MainActivity3 extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
-        binding = ActivityMain3Binding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        setSupportActionBar(binding.toolbar);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        Button btnback2 = findViewById(R.id.botaovoltar2);
-        btnback2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity2.class));
-            }
-        });
 
 
     }
