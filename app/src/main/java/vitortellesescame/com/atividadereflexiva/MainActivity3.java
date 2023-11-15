@@ -15,10 +15,17 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 import vitortellesescame.com.atividadereflexiva.databinding.ActivityMain3Binding;
 
 public class MainActivity3 extends AppCompatActivity {
+    RecyclerView recyclerView;
+    Adapter adapter;
+    ArrayList<String> items;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMain3Binding binding;
@@ -26,6 +33,19 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main3);
+
+        items = new ArrayList<>();
+        items.add("Primeiro item do Cardview");
+        items.add("Segundo item do Cardview");
+        items.add("Terceiro item do Cardview");
+        items.add("Quarto item do Cardview");
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new Adapter(this, items);
+        recyclerView.setAdapter(adapter);
+
 
         binding = ActivityMain3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
